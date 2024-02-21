@@ -2,7 +2,7 @@ import React from 'react';
 import CafeBackground from '../organisms/CafeBackground';
 import Button from '../atoms/Button';
 import { Link } from 'react-router-dom';
-import './HomePage.css'; // Importa el CSS si es necesario para los estilos adicionales
+import './HomePage.css';
 
 function HomePage() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ReservationForm.css';
 
-function ReservationForm() {
+function ReservationForm({ onSubmit }) {
   const [formData, setFormData] = useState({
     name: '',
     date: '',
@@ -21,6 +21,7 @@ function ReservationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Datos de la reserva:", formData);
+    onSubmit(formData);
   };
 
   return (
@@ -42,6 +43,7 @@ function ReservationForm() {
             name="date"
             value={formData.date}
             onChange={handleChange}
+            placeholder="Fecha"
             className="reservation-input"
             />
             <input
@@ -49,6 +51,7 @@ function ReservationForm() {
             name="time"
             value={formData.time}
             onChange={handleChange}
+            placeholder="Hora"
             className="reservation-input"
             />
             <input
