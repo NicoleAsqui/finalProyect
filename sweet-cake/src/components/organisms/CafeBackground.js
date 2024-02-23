@@ -1,5 +1,5 @@
 import React from 'react';
-import './cafeBackground.css';
+import './CafeBackground.css';
 
 function CafeBackground() {
   return (
